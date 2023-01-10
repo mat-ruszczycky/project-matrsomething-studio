@@ -1,0 +1,11 @@
+{{#extend "shared/templates/page" content=config}}
+	{{#content "body:main:content" mode="replace"}}
+		<div data-router-view="custom">
+			<div data-scroll-container>
+				{{> 'partials/hero'}}
+				{{> 'partials/projects'}}
+				{{> 'partials/about'}}
+			</div>
+		</div>
+	{{/content}}
+{{/extend}}

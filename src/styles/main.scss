@@ -1,0 +1,24 @@
+@charset 'utf-8';
+
+// Base(s)
+@import 'shared/base/utils';
+@import 'shared/base/normalize';
+@import 'shared/base/grid';
+@import 'shared/base/typography';
+@import 'shared/base/common';
+@import 'shared/base/debugger';
+
+// Component(s)
+@import 'shared/components/canvas';
+@import 'shared/components/header';
+@import 'shared/components/preloader';
+@import 'shared/components/scrollbar';
+@import 'shared/components/shroud';
+
+// Template(s)
+@import 'shared/templates/project-detail';
+
+// Partial(s)
+@import 'partials/hero';
+@import 'partials/projects';
+@import 'partials/about';

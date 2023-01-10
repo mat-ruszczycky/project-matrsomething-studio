@@ -1,0 +1,43 @@
+<section class="section section-about" data-scroll-section>
+    {{#> 'shared/modules/container'}}
+		<div class="col-lg-12 mx-auto">
+			<div id="about-intro">
+				<h2 class="headline">
+					<span class="eyebrow">MatRsomething Studio</span>
+					<span class="headline-content"><span>Creative</span> <span>for</span> <span>the</span> <span>greater</span> <span>good</span> <span>since</span> <span>2001.</span></span>
+				</h2>
+			</div>
+		</div>
+
+		<div class="col-lg-9 mx-auto">
+			<div id="about-info" class="about-block" data-scroll data-scroll-speed="1.2">
+				<h3 class="about-block-headline">About</h3>
+				<div class="about-block-copy">
+					<p>{{content.metadata.description}}</p>
+				</div>
+			</div>
+
+			<div id="about-contact" class="about-block" data-scroll data-scroll-speed=".7">
+				<h3 class="about-block-headline">Contact</h3>
+				<div class="about-block-copy">
+					<p><a href="mailto:{{content.metadata.contact}}">{{content.metadata.contact}}</a></p>
+				</div>
+			</div>
+
+			<div id="about-social" class="about-block" data-scroll data-scroll-speed=".2">
+				<h3 class="about-block-headline">Discover</h3>
+				<div class="about-block-copy">
+					<ul>
+						{{#each content.metadata.share}}
+							{{#if this.isVisible}}
+								<li><a href="{{this.url}}" target="_blank">{{this.title}}</a></li>
+							{{/if}}
+						{{/each}}
+					</ul>
+				</div>
+			</div>
+
+			<p id="about-copyright">&copy; mmxxi - MatRsomething Studio</p>
+		</div>
+	{{/ 'shared/modules/container'}}
+</section>

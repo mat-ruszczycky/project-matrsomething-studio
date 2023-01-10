@@ -1,0 +1,95 @@
+{
+	"metadata": {
+		"assets": "",
+		"notIndex": false,
+		"title": "MatRsomething Studio",
+		"meta-title": "MatRsomethingStudio",
+		"url": "http://matrsomething.com/",
+		"description": "Born of passion, curiosity & imagination, MatRsomething is a creative studio focused on impacting the senses through artistic visual expressions.",
+		"locale": {
+			"lang": "en",
+			"country": "US"
+		},
+		"contact": "hello@matrsomething.com",
+		"share": {
+			"instagram": {
+				"isVisible": true,
+				"title": "In",
+				"url": "https://www.instagram.com/matrsomethin/"
+			},
+			"linkedin": {
+				"isVisible": true,
+				"title": "Li",
+				"url": "https://www.linkedin.com/in/matrsomething-studio"
+			},
+			"github": {
+				"isVisible": true,
+				"title": "Git",
+				"url": "https://github.com/matrsomething-studio"
+			}
+		},
+		"projects": {
+			"the-west-pier" : {
+				"isVisible": true,
+				"isAltAligned": false,
+				"year": "2022",
+				"title": "The West Pier",
+				"category": "A Visual & Creative Experience",
+				"tasks": "Design / Development / WebGL Experiment",
+				"summary": "Set for a 2022 release, “The West Pier” is inspired by modern storytelling in video games. Envisioned as an exploration of story, sound & motion.",
+				"url-slug": "the-west-pier/",
+				"images": [
+					"concept-title-screen.jpg",
+					"thumbs-preload.jpg",
+					"concept-preload.jpg",
+					"thumbs-title.jpg"
+				],
+				"router": {
+					"next": "matrsomething",
+					"prev": "level-studios"
+				}
+			},
+			"matrsomething" : {
+				"isVisible": true,
+				"isAltAligned": true,
+				"year": "2021",
+				"title": "MatRsomething Studio",
+				"category": "A Creative Haven",
+				"tasks": "Design / Development",
+				"summary": "Born of passion, curiosity & imagination, MatRsomething is a creative studio focused on impacting the senses through artistic visual expressions.",
+				"website": "http://www.matrsomething.com/",
+				"url-slug": "matrsomething/",
+				"images": [
+					"quote.jpg",
+					"home.jpg"
+				],
+				"router": {
+					"next": "level-studios",
+					"prev": "the-west-pier"
+				}
+			},
+			"level-studios" : {
+				"isVisible": true,
+				"isAltAligned": false,
+				"year": "2020",
+				"title": "Level Studios",
+				"category": "A Digital Marketing Agency",
+				"tasks": "Development",
+				"summary": "The Level Studios brand was revived to embrace a reimagined identity. Fraught with challenges, the amazing team assembled to deliver a rich & rewarding experience.",
+				"website": "https://www.level-studios.com/",
+				"url-slug": "level-studios/",
+				"images": [
+					"menu.jpg",
+					"intro.jpg",
+					"about.jpg",
+					"partners.jpg",
+					"contact.jpg"
+				],
+				"router": {
+					"next": "the-west-pier",
+					"prev": "matrsomething"
+				}
+			}
+		}
+	}
+}

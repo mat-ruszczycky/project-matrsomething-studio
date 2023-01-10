@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+	{{#block "doctype"}}
+		<html xml:lang="{{content.metadata.locale.lang}}-{{content.metadata.locale.country}}" lang="{{content.metadata.locale.lang}}-{{content.metadata.locale.country}}" prefix="og: http://ogp.me/ns#" class="no-js">
+	{{/block}}
+
+	{{#block "head"}}
+		<head>
+			{{#if content.metadata.notIndex}}
+				<meta name="robots" content="noindex, nofollow"/>
+			{{/if}}
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+			<link rel="canonical" href="{{content.metadata.url}}">
+			<title>{{#block "head:title"}}Welcome{{/block}} - {{content.metadata.title}}</title>
+			{{#block "head:meta:share"}}
+				<meta name="description" content="{{content.metadata.description}}">
+				<meta property="og:title" content="{{content.metadata.title}}">
+				<meta property="og:description" content="{{content.metadata.description}}">
+				<meta property="og:url" content="{{content.metadata.url}}">
+				<meta property="og:locale" content="{{content.metadata.locale.lang}}_{{content.metadata.locale.country}}">
+				<meta property="og:image" content="{{content.metadata.url}}assets/images/meta/og.png">
+				<meta property="og:type" content="website">
+				<meta property="og:site_name" content="{{content.metadata.title}}">
+				<meta name="twitter:site" content="@{{content.metadata.meta-title}}">
+				<meta name="twitter:card" content="summary_large_image">
+				<link rel="apple-touch-icon" href="{{content.metadata.assets}}/assets/images/meta/apple-touch-icon.png">
+			{{/block}}
+			{{#block "head:styles"}}
+				<link href="{{content.metadata.assets}}/assets/built/styles/main.built.css" rel="stylesheet">
+			{{/block}}
+		</head>
+	{{/block}}
+
+	{{#block "body"}}
+		<body class="page page-bkgd-texture {{#block "body:class"}}{{/block}}">
+			{{#block "body:header"}}
+				{{> "shared/components/header"}}
+			{{/block}}
+
+			{{#block "body:main"}}
+				<main id="main" data-router-wrapper>
+					{{#block "body:main:content"}}{{/block}}
+				</main>
+			{{/block}}
+
+			{{#block "body:canvas"}}
+				{{> "shared/components/canvas-spotlight"}}
+			{{/block}}
+
+			{{#block "body:shroud"}}
+				{{> "shared/components/shroud"}}
+			{{/block}}
+
+			{{#block "body:preloader"}}
+				{{> "shared/components/preloader"}}
+			{{/block}}
+			
+			{{#block "body:scripts"}}
+				<script src="{{content.metadata.assets}}/assets/built/scripts/main.built.js" defer></script>
+			{{/block}}
+		</body>
+	{{/block}}
+</html>

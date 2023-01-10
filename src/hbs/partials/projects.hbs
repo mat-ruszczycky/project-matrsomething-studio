@@ -1,0 +1,30 @@
+<section id="projects" class="section section-projects" data-scroll-section>
+    {{#> 'shared/modules/container'}}
+        {{#each content.metadata.projects}}
+            {{#if this.isVisible}}
+                <div class="project-record {{#if this.isAltAligned}}offset-lg-3 col-lg-9{{else}}col-lg-9{{/if}}">
+                    <a class="project-blocklink" href="/projects/{{@key}}">
+                        <div class="project-thumbnail-outerwrap" data-mr-el="project-thumbnail-outerwrap">
+                            <div data-scroll-fx="distort">
+                                <img class="project-thumbnail" src="/assets/images/projects/{{@key}}/title-card.png" alt="{{this.title}}" />
+                            </div>
+                        </div>
+
+                        <div class="project-copyblock {{#if this.isAltAligned}}project-copyblock-alt{{/if}}" data-mr-el="project-copyblock" data-scroll data-scroll-speed=".65">
+                            <h2 class="project-title">
+                                <span class="project-year">{{this.year}}</span>
+                                <span class="project-name">{{this.title}}</span>
+                            </h2>
+
+                            <div class="project-meta">
+                                <p class="project-category">{{this.category}}</p>
+                                <p class="project-tasks">{{this.tasks}}</p>
+                                <p class="project-view"><span> View Project</span></p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            {{/if}}
+        {{/each}}
+     {{/ 'shared/modules/container'}}
+</section>

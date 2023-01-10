@@ -1,0 +1,73 @@
+<section class="section section-project-detail">
+    {{#> 'shared/modules/container'}}        
+        <div id="project-detail-hero" data-mr-el="project-detail-out">
+            <div class="col-md-12 mx-auto">
+                <img src="../../assets/images/projects/{{this.url-slug}}hero.jpg" alt="{{this.title}} hero">
+            </div>
+        </div>
+
+        <div id="project-detail-info" data-mr-el="project-detail-out">
+            <div class="col-md-11 mx-auto">
+                <div class="row row-nested">
+                    <div class="col-lg-7">
+                        <div id="project-detail-info-title">
+                            <h2 class="detail-heading">
+                                <span class="detail-year">{{this.year}}</span>
+                                {{this.title}}
+                            </h2>
+                        </div>
+
+                        <div id="project-detail-info-meta">
+                            <p class="detail-category">{{this.category}}</p>
+                            <p class="detail-tasks">{{this.tasks}}</p>
+                        </div>
+                        
+                        <div id="project-detail-info-summary">
+                            <p>{{this.summary}}</p>
+                        </div>
+                    </div>
+
+                    <div id="project-detail-top-router" class="col-lg-5 align-self-center">
+                        <div class="share-router">
+                            <p class="share-router-title">Share</p>
+                            <div class="share-router-links"> 
+                                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://matrsomething.com/projects/{{url-slug}}">Fb</a>
+                                <a target="_blank" href="https://twitter.com/intent/tweet?url=http://matrsomething.com/projects/{{url-slug}}">Tw</a>
+                                <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url=http://matrsomething.com/projects/{{url-slug}}">Li</a>
+                            </div>  
+                        </div>
+
+                        <div class="share-router">
+                            <div class="share-router-links">
+                                <a class="route" href="/projects/{{this.router.prev}}/">&lt;<span> Prev</span></a>
+                                <a class="route" href="/">&#10005;</a>
+                                <a class="route"href="/projects/{{this.router.next}}/"><span>Next </span>&gt;</a>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="project-detail-images">
+            <div class="col-md-12 mx-auto">
+                {{#each this.images}}
+                    <img data-mr-el="project-detail-out" src="../../assets/images/projects/{{...url-slug}}{{this}}" alt="{{...title}}">
+                {{/each}}
+            </div>
+        </div>
+        
+        <div id="project-detail-bottom-router">
+            <div class="col-md-12 mx-auto">
+                <div class="share-router">
+                    <div class="share-router-links">
+                        <a class="route" href="/projects/{{this.router.prev}}/">&lt;<span> Prev</span></a>
+                        <a class="route" href="/">&#10005;</a>
+                        <a class="route"href="/projects/{{this.router.next}}/"><span>Next </span>&gt;</a>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{/ 'shared/modules/container'}}
+</section>
+

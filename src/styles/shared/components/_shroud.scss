@@ -1,0 +1,18 @@
+// Component - shroud
+#shroud {
+    @extend %theme-dark;
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+    pointer-events: none; 
+    opacity: 0; 
+    display: none;
+
+    .has-touch & {
+        display: block;
+        opacity: .5;
+        z-index: -1;
+    }
+}

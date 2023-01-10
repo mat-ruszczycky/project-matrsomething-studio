@@ -1,0 +1,48 @@
+// Partial - hero
+.section-hero { 
+    .hero-headline {
+        @include picture (230px, 230px, '../../svgs/logo-dark-full.svg');
+        filter: drop-shadow(7px 7px 6px rgba(22, 22, 22, 1));
+        margin: 0 auto;
+        top: -70px;
+        
+        @include media-breakpoint-up(lg) {
+            top: -45px;
+            $w: 19vw;
+            $h: 18vw;
+            width: $w;
+            height: $h;
+            background-size: $w $h;
+        }
+    }
+  
+    .btn-hero-cta {
+          position: absolute; 
+          cursor: pointer;
+          bottom: 28%; 
+          left: 50%; 
+          padding-bottom: 6px;
+          transform: translateX(-50%);
+          text-transform: uppercase;
+          text-decoration: none;
+          letter-spacing: .3em;
+          font-size: 14px;
+          font-weight: 100;
+          white-space: nowrap;
+          color: rgba(255, 255, 255, .9);
+          background-color: transparent;
+          outline: none;
+          border: 0;
+          border-bottom: 1px solid rgba(255, 255, 255, .3);
+          transition: border 120ms ease-in-out, opacity .25s ease-in;
+
+            @include media-breakpoint-up(md) {
+                bottom: 15%; 
+            }
+  
+          &:hover {
+              border-bottom: 1px solid rgba(255, 255, 255, 0);
+              opacity: .7;
+          }
+      }
+  }

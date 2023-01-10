@@ -1,0 +1,15 @@
+// Component - canvas
+#canvas-spotlight {
+    position: absolute; 
+    top: 0; 
+    z-index: 1;
+    pointer-events: none; 
+    
+    .has-touch & {
+        display: none;
+    }
+
+    &.look-for-the-light {
+        z-index: -1;
+    }
+}

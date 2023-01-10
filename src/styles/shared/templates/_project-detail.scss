@@ -1,0 +1,207 @@
+// Template - project detail
+.section-project-detail {
+    #project-detail-hero {
+        img {
+            display: block; 
+            width: 100%; 
+            margin: 0 auto; 
+            pointer-events: none;
+
+            @include media-breakpoint-up(md) {
+                width: 95%; 
+            }
+        }
+    }
+
+    #project-detail-info {
+        margin: 70px 0 0;
+
+        @include media-breakpoint-up(md) {
+            margin-top: 100px;
+        }
+
+        .row-nested {
+            min-height: auto;
+        }
+
+        #project-detail-info-title {            
+            .detail-heading {
+                font-size: 44px;
+                font-weight: 100;
+                color: rgba(255, 255, 255, 0.9);
+                
+                .detail-year {
+                    position: relative;
+                    display: block;
+                    font-size: 16px;
+                    margin-bottom: 12px;
+                }
+            }            
+         }
+
+        #project-detail-info-meta {
+            margin-top: 10px;
+            opacity: .5;
+
+            .detail-category,
+            .detail-tasks {
+                font-weight: 300;
+                line-height: 1.45em;
+            }
+
+            .detail-category {
+                font-size: 18px;
+            }
+
+            .detail-tasks {
+                font-size: 15px;
+            }
+         }
+
+        #project-detail-info-summary {
+            margin-top: 20px; 
+           
+            p {
+                font-size: 20px;
+                font-weight: 100;
+                line-height: 1.85em;   
+            }    
+         }
+
+         #project-detail-top-router {
+            padding-left: 20px;
+            padding-right: 0;
+    
+            @include media-breakpoint-up(xl) {
+                padding-left: 80px;
+            }
+    
+            .share-router {
+                border-left: 2px solid rgba(255,255,255,0.3); 
+                padding: 5px 0 15px 20px; 
+                margin-top: 45px;
+    
+                .share-router-title {
+                    font-weight: 300; 
+                    font-size: 16px; 
+                    line-height: 1.25em; 
+                    color: rgba(255,255,255,0.3); 
+                    text-transform: uppercase;
+                }
+    
+                .share-router-links {
+                    margin-top: 10px;
+                    font-weight: 100;
+                    font-size: 14px;
+    
+                    a {
+                        margin: 0 30px 0 0;
+                    
+                        &:last-child {
+                            margin: 0 0 0 0;
+                        }
+
+                        &.route {
+                            border: 0;
+
+                            span {
+                                border-bottom: 1px solid rgba(255, 255, 255, .3);
+                                transition: border 120ms ease-in-out;
+                                padding-bottom: 6px;
+                            }
+
+                            &:nth-child(2) {
+                                margin: 0;
+                                padding: 0 30px;
+                                margin-right: 15px;
+                                border-right: 1px solid rgba(255, 255, 255, .3);
+                                border-left: 1px solid rgba(255, 255, 255, .3);
+                            }
+                        }    
+        
+                        &:hover {
+                            &.route {
+                                span {
+                                    border-bottom: 1px solid rgba(255, 255, 255, .0);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #project-detail-images {
+        img {
+            display: block; 
+            width: 100%; 
+            margin: 50px auto 0;
+            opacity: .85;
+
+            @include media-breakpoint-up(md) {
+                margin-top: 180px;
+                width: 95%; 
+            }
+
+            &:first-child {
+                margin: 65px auto 0;
+
+                @include media-breakpoint-up(lg) {
+                    margin: 120px auto 0;
+                }
+            }
+        }
+    }
+
+    #project-detail-bottom-router {
+        width: 100%;
+        margin: 20px 0 100px; 
+        text-align: center;
+        font-size: 15px;
+
+        .share-router {
+            padding: 5px 0 10px 0; 
+            margin-top: 45px;
+
+            .share-router-links {
+                margin-top: 14px;
+                font-weight: 100;
+
+                a {
+                    margin: 0 30px 0 0;
+    
+                    &:last-child {
+                        margin: 0 0 0 0;
+                    }
+
+                    &.route {
+                        border: 0;
+
+                        span {
+                            border-bottom: 1px solid rgba(255, 255, 255, .3);
+                            transition: border 120ms ease-in-out;
+                            padding-bottom: 6px;
+                        }
+
+                        &:nth-child(2) {
+                            margin: 0;
+                            padding: 0 30px;
+                            margin-right: 15px;
+                            border-right: 1px solid rgba(255, 255, 255, .3);
+                            border-left: 1px solid rgba(255, 255, 255, .3);
+                        }
+                    }    
+    
+                    &:hover {
+                        &.route {
+                            span {
+                                border-bottom: 1px solid rgba(255, 255, 255, .0);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{{#extend "shared/templates/page" content=config}}
+	{{#content "head:title" mode="replace"}}{{#with content.metadata.projects.level-studios}}{{this.title}} - Projects{{/with}}{{/content}}
+
+	{{#content "body:main:content" mode="replace"}}
+		{{#> 'shared/modules/detail-wrapper'}}
+			{{#with content.metadata.projects.level-studios}}
+				{{> "shared/templates/project-detail"}}
+			{{/with}}
+		{{/ 'shared/modules/detail-wrapper'}}
+	{{/content}}
+{{/extend}}
+
+

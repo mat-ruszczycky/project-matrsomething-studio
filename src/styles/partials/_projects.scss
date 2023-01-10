@@ -1,0 +1,166 @@
+// Partial - projects
+.section-projects {
+    margin-top: 0;
+    padding-top: 40px;
+
+    @include media-breakpoint-up(md) {
+        margin-top: 80px;
+    }
+ 
+    .project-record {
+        margin-top: 80px;
+
+        @include media-breakpoint-up(md) {
+            margin-top: 100px;
+        }
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        .project-blocklink {
+            display: inline-block;
+            letter-spacing: 0;
+            border: 0;
+            outline: none;
+            opacity: .5;
+            transition: opacity 400ms ease-in-out;
+
+            .has-touch & {
+                opacity: 1 !important;
+            }
+            
+            .project-thumbnail-outerwrap {
+                overflow: hidden;
+
+                .project-thumbnail {
+                    background-color: rgba(255, 255, 255, .0125);
+                    width: 100%;
+                    transform-origin: center;
+                    will-change: transform;
+                    backface-visibility: hidden; 
+                    transition: transform 350ms ease-in-out;
+                }
+            }
+
+            .project-copyblock {
+                text-align: left;
+
+                @include media-breakpoint-up(lg) {
+                    margin-top: -55px;
+                    margin-right: 45px;
+                    text-align: right;
+                }
+
+                @include media-breakpoint-up(xl) {
+                    margin-right: -70px;
+                }
+                
+                .project-title {
+                    margin-top: 4vh;
+                    color: #fff;;
+
+                    @include media-breakpoint-up(lg) {
+                        margin-top: 0;
+                        padding-left: 30px;
+                    }
+                    
+                    .project-year {
+                        font-size: 16px;
+                        font-weight: 100;
+                        display: block;
+                        margin-bottom: 12px;
+                        
+                        @include media-breakpoint-up(md) {
+                            position: relative;
+                            display: inline;
+                            vertical-align: super;
+                            padding-right: 20px;
+                            margin-bottom: 0;
+                            top: -12px;
+                        }
+                    }
+
+                    .project-name {
+                        font-size: 27px;
+                        font-weight: 100;
+
+                        @include media-breakpoint-up(sm) {
+                            font-size: 35px;
+                        }
+
+                        @include media-breakpoint-up(md) {
+                            font-size: 45px;
+                        }
+                    }
+                }
+
+                .project-meta {
+                    color: #ffffff80;
+                    margin-top: 5px;
+                    padding-bottom: 6px;
+                    font-size: 18px;
+                    font-weight: 300;
+                    line-height: 1.25em;
+
+                    @include media-breakpoint-up(md) {
+                        padding-left: 94px;
+                    }
+
+                    .project-tasks {
+                        font-size: 14px;
+                    }
+
+                    .project-category {
+                    }
+                    
+                    .project-view {
+                        margin-top: 22px;
+                        color: rgba(255, 255, 255, 1);
+                        font-size: 14px;
+                        letter-spacing: .18em;
+                        transition: opacity 400ms ease-in-out;
+
+                        span {
+                            display: inline-block;
+                            border-bottom: 1px solid rgba(255, 255, 255, .3);
+                            padding-bottom: 4px;
+                        }
+
+                        &:after {
+                            content: " >";
+                        }
+
+                        .has-touch & {
+                            opacity: 1 !important;
+                        }
+
+                        @include media-breakpoint-up(md) {
+                            opacity: 0;
+                        }
+                    }
+                }
+
+                &.project-copyblock-alt {
+                    @include media-breakpoint-up(lg) {
+                        margin-top: -55px;
+                        margin-left: -140px;
+                        text-align: left;
+                    }
+                }
+            }
+            
+            &:hover {
+                opacity: 1;
+
+                .project-thumbnail {
+                    transform: scale(.98);
+                }
+
+                .project-view {
+                    opacity: 1 !important;
+                }
+            }
+        }
+    }
+}

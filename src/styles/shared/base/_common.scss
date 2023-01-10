@@ -1,0 +1,45 @@
+// Base - common
+html {
+    scroll-behavior: smooth;
+    
+	cursor: url(../../svgs/cursor-dark.svg) 16 16, pointer;
+
+    &.overflow-hide {
+        overflow: hidden;
+    }
+
+    &.has-touch {
+        body {
+            overflow: auto;
+            overflow-x: hidden;
+        }
+    }
+    
+    body {
+        @extend %theme-dark;
+        height: 100vh;
+        overflow: hidden;
+       
+        &.page-bkgd-texture {
+            background-image: url('../../images/main/canvas.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        main {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+
+            .section {
+                position: relative;
+            
+                .row {
+                    min-height: 100vh;
+                }
+            }
+        }   
+    }
+}
