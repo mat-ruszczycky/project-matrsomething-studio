@@ -5,7 +5,7 @@
 		"title": "MatRsomething Studio",
 		"meta-title": "MatRsomethingStudio",
 		"url": "http://matrsomething.com/",
-		"description": "Born of passion, curiosity & imagination, MatRsomething is a creative studio focused on impacting the senses through artistic visual expressions.",
+		"description": "Born of passion, curiosity & imagination, focused on impacting the senses through artistic visual expressions.",
 		"locale": {
 			"lang": "en",
 			"country": "US"
@@ -30,7 +30,7 @@
 		},
 		"projects": {
 			"the-west-pier" : {
-				"isVisible": true,
+				"isVisible": false,
 				"isAltAligned": false,
 				"year": "2022",
 				"title": "The West Pier",
@@ -51,7 +51,7 @@
 			},
 			"matrsomething" : {
 				"isVisible": true,
-				"isAltAligned": true,
+				"isAltAligned": false,
 				"year": "2021",
 				"title": "MatRsomething Studio",
 				"category": "A Creative Haven",
@@ -65,12 +65,12 @@
 				],
 				"router": {
 					"next": "level-studios",
-					"prev": "the-west-pier"
+					"prev": "level-studios"
 				}
 			},
 			"level-studios" : {
 				"isVisible": true,
-				"isAltAligned": false,
+				"isAltAligned": true,
 				"year": "2020",
 				"title": "Level Studios",
 				"category": "A Digital Marketing Agency",
@@ -86,7 +86,7 @@
 					"contact.jpg"
 				],
 				"router": {
-					"next": "the-west-pier",
+					"next": "matrsomething",
 					"prev": "matrsomething"
 				}
 			}
