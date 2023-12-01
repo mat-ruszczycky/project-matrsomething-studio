@@ -5,7 +5,7 @@
 		"title": "MatRsomething Studio",
 		"meta-title": "MatRsomethingStudio",
 		"url": "http://matrsomething.com/",
-		"description": "Born of passion, curiosity & imagination, focused on impacting the senses through artistic visual expressions.",
+		"description": "Software Engineer specializing in Full-Stack development. Expertise in leading and mentoring exceptional Front-End developers to deliver modern high-impact projects of world-class caliber.",
 		"locale": {
 			"lang": "en",
 			"country": "US"
@@ -13,7 +13,7 @@
 		"contact": "hello@matrsomething.com",
 		"share": {
 			"instagram": {
-				"isVisible": true,
+				"isVisible": false,
 				"title": "In",
 				"url": "https://www.instagram.com/matrsomethin/"
 			},
@@ -51,7 +51,7 @@
 			},
 			"matrsomething" : {
 				"isVisible": true,
-				"isAltAligned": false,
+				"isAltAligned": true,
 				"year": "2021",
 				"title": "MatRsomething Studio",
 				"category": "A Creative Haven",
@@ -70,7 +70,7 @@
 			},
 			"level-studios" : {
 				"isVisible": true,
-				"isAltAligned": true,
+				"isAltAligned": false,
 				"year": "2020",
 				"title": "Level Studios",
 				"category": "A Digital Marketing Agency",
