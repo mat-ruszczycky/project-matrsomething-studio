@@ -23,12 +23,14 @@ const show = () => {
 	HTML.classList.add('overflow-hide');
 };
 
-const load = () => {
+const setTimeline = () => {
 	TL.fromTo(QUOTE_SPAN, {opacity: 0}, {opacity: 1, duration: 1.95, ease: Quad.easeOut, stagger: .125, onStart: show})
 	  .fromTo(QUOTE_BYLINE, {opacity: 0}, {opacity: 1, duration: .35, ease: Quad.easeIn})
 	  .fromTo(QUOTE_WRAPPER, {opacity: 1}, {opacity: 0, delay: 3, duration: .35, ease: Quad.easeIn})
 	  .fromTo(PRELOADER, {y: 0}, {y: '-100vh', delay: .5, duration: .4, ease: Quad.easeIn, onComplete: hide})
 	  .fromTo(MAIN, {scale: .95, opacity: 0, y: '5vh'}, {opacity: 1, scale: 1,  y: 0, duration: .65, ease: Quad.easeOut}, '<-.04');
+
+	TL.pause();
 };
 
 const init = () => {
@@ -36,7 +38,18 @@ const init = () => {
 		return;
 	}
 	
-	setTimeout(load, 1000);
+	setTimeline();
+
+	if(sessionStorage.getItem("mrInit")) {
+		let duration = TL.totalDuration();
+		TL.seek(duration);
+	} else {
+		setTimeout(() => {
+			TL.play();
+		}, 1000);
+	}
+
+	sessionStorage.setItem("mrInit", true);
 };
 
 // Export(s)	
