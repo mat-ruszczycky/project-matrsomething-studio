@@ -1,7 +1,7 @@
 // Partial - hero
 .section-hero { 
     .hero-headline {
-        @include picture (230px, 230px, '../../svgs/logo-dark-full.svg');
+        @include picture (230px, 230px, '../../svgs/logo-dark.svg');
         filter: drop-shadow(7px 7px 6px rgba(22, 22, 22, 1));
         margin: 0 auto;
         top: -70px;
