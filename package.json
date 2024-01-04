@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"preview": "open http://localhost:9090/",
-		"serve": "npm run preview && cd dist/ && python -m SimpleHTTPServer 9090",
+		"serve": "npm run preview && cd dist/ && python3 -m http.server 9090",
 		"commit-checkpoint": "git add . && git commit -m 'dev: checkpoint' && git push",
 		"open-repo": "open https://bitbucket.org/mrusz1683/matrsomething-v2/src/master/",
 		"clean": "rm -rf dist/*",

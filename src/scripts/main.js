@@ -12,8 +12,8 @@ import * as TransitionManager from './components/transitionManager';
 const Main = () => {
     NoJs.init();
     Preloader.init();
-    Canvas.init();
-    TransitionManager.init();
+    // Canvas.init();
+    // TransitionManager.init();
 };
 
 document.addEventListener('readystatechange', e => {

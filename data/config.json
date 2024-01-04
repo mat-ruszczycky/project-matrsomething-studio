@@ -5,7 +5,7 @@
 		"title": "MatRsomething Studio",
 		"meta-title": "MatRsomethingStudio",
 		"url": "http://matrsomething.com/",
-		"description": "Software Engineer specializing in Full-Stack development. Expertise in leading and mentoring exceptional Front-End developers to deliver modern high-impact projects of world-class caliber.",
+		"description": "Mat Ruszczycky is a Software Engineer specializing in Full-Stack development. His expertise is in leading and mentoring exceptional Front-End developers to deliver modern high-impact projects of world-class caliber.",
 		"locale": {
 			"lang": "en",
 			"country": "US"
@@ -20,12 +20,12 @@
 			"linkedin": {
 				"isVisible": true,
 				"title": "Li",
-				"url": "https://www.linkedin.com/in/matrsomething-studio"
+				"url": "https://www.linkedin.com/in/mat-ruszczycky/"
 			},
 			"github": {
 				"isVisible": true,
 				"title": "Git",
-				"url": "https://github.com/matrsomething-studio"
+				"url": "https://github.com/mat-ruszczycky"
 			}
 		},
 		"projects": {
