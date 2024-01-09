@@ -1,13 +1,14 @@
 // Partial - hero
 .section-hero { 
+    min-height: 50vh;
     .hero-headline {
         @include picture (230px, 230px, '../../svgs/logo-dark.svg');
         filter: drop-shadow(7px 7px 6px rgba(22, 22, 22, 1));
         margin: 0 auto;
-        top: -70px;
+        // top: -70px;
         
         @include media-breakpoint-up(lg) {
-            top: -45px;
+            // top: -45px;
             $w: 19vw;
             $h: 18vw;
             width: $w;
@@ -19,7 +20,7 @@
     .btn-hero-cta {
           position: absolute; 
           cursor: pointer;
-          bottom: 28%; 
+          bottom: 0; 
           left: 50%; 
           padding-bottom: 6px;
           transform: translateX(-50%);
@@ -36,9 +37,9 @@
           border-bottom: 1px solid rgba(255, 255, 255, .3);
           transition: border 120ms ease-in-out, opacity .25s ease-in;
 
-            @include media-breakpoint-up(md) {
-                bottom: 15%; 
-            }
+            // @include media-breakpoint-up(md) {
+            //     bottom: 0; 
+            // }
   
           &:hover {
               border-bottom: 1px solid rgba(255, 255, 255, 0);
