@@ -1,11 +1,20 @@
 // Partial - hero
 .section-hero { 
     min-height: 50vh;
+
+    @media screen and (orientation:landscape) { 
+        min-height: 75vh;
+    }
+
     .hero-headline {
         @include picture (230px, 230px, '../../svgs/logo-dark.svg');
         filter: drop-shadow(7px 7px 6px rgba(22, 22, 22, 1));
         margin: 0 auto;
         // top: -70px;
+
+        @media screen and (orientation:landscape) { 
+            top: 50px;
+        }
         
         @include media-breakpoint-up(lg) {
             // top: -45px;
@@ -37,10 +46,11 @@
           border-bottom: 1px solid rgba(255, 255, 255, .3);
           transition: border 120ms ease-in-out, opacity .25s ease-in;
 
-            // @include media-breakpoint-up(md) {
-            //     bottom: 0; 
-            // }
-  
+        // @include media-breakpoint-up(md) {
+        //     bottom: 0; 
+        // }
+
+    
           &:hover {
               border-bottom: 1px solid rgba(255, 255, 255, 0);
               opacity: .7;
